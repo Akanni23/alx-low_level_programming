@@ -7,13 +7,23 @@
  */
 int main(void)
 {
-	int d;
-	char low;
+	int i, j;
 
-	for (d = '0'; d <= '9'; d++)
-		putchar(d);
-	for (low = 'a'; low <= 'f'; low++)
-		putchar(low);
+	for (i = 0; i <= 98; i++)
+	{
+		for (j = i + 1; j <= 99; j++)
+		{
+			putchar((i / 10) + '0');
+			putchar((i % 10) + '0');
+			putchar(' ');
+			putchar((j / 10) + '0');
+			putchar((j % 10) + '0');
+		if (i == 98 && j == 99)
+			continue;
+		putchar(',');
+		putchar(' ');
+		}
+	}
 	putchar('\n');
 	return (0);
 }
