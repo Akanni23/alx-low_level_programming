@@ -1,1 +1,1 @@
-0x018 - C Dynamic Liberaries projects
+0x18. C - Dynamic libraries (Projects for C)
